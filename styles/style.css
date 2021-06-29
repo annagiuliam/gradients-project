@@ -1,6 +1,13 @@
-:root {
-    --bottom-border: 0.3px solid rgb(226 226 226);
-}
+/* @font-face {
+    font-family: 'robotothin';
+    src: url('roboto-thin-webfont.woff2') format('woff2'),
+         url('roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 *,
 *:before,
@@ -11,16 +18,84 @@
 }
 
 body {
-    height: 100%;
+    min-height: 830px;
+    max-height: 1472px;
     background-color: aliceblue;
 }
 
-#billboard {
+#billboard-container {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
     left:0;
     bottom: 292px;
     background-color: aqua;
-    /* background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat; */
+    overflow: hidden;  
+    min-height: 538px; 
+}
+
+.hero {
+    position: absolute;
+    top: 0;    
+    bottom: 0;
+    left: 50%;
+    margin-left: -720px;
+    width: 1440px;
+    /* 50% means it will align the middle of the image with the middle of the container. 100% means it will align the last pixel of the image with the last pixel of the container */
+    background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;    
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -170px;
+    padding: 50px 0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    line-height: 104px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1:hover, h2:hover {
+    cursor: pointer;
+}
+
+#play-icon {
+    color: white;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+.h3-container {
+    /* height: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#80808085;
+    
+}
+
+#play-icon {
+    width: 40px;
+    height: 40px;
+    stroke: white;
 }
