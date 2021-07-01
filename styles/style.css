@@ -13,7 +13,7 @@
 body {
     min-height: 830px;
     max-height: 1472px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     font-family: 'Raleway', sans-serif;
 }
 
@@ -24,7 +24,7 @@ body {
     right: 0;
     left:0;
     bottom: 292px;
-    background-color: aqua;
+    /* background-color: aqua; */
     overflow: hidden;  
     min-height: 538px; 
 }
@@ -201,4 +201,66 @@ input:focus {
 .promo-item img {
     height: 100%;
     width: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    left: 0;
+    top: 741px;
+    /* background-color: darkmagenta; */
+    height: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #6e6e6e;
+    
+    
+}
+
+footer a {
+    color: #08c;
+    text-decoration-line: none;
+    z-index: 1;
+}
+
+footer a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #08c;
+}
+
+.info-wrapper {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: darksalmon; */
+    /* border: 1px solid black; */
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top p {
+    height: 100%;
+    display: block;
+  vertical-align: middle;
+}
+.footer-top ul {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.info-wrapper li {
+    padding-left: 6px;
+    padding-right: 6px;
+    border-right: 1px solid grey;
+}
+
+#flag {
+    border: 0px;
 }
