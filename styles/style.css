@@ -214,9 +214,7 @@ footer {
     height: 90px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
-    color: #6e6e6e;
-    
-    
+    color: #6e6e6e; 
 }
 
 footer a {
@@ -248,12 +246,10 @@ footer a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.footer-top ul {
+.footer-top ul, .footer-bottom ul {
     display: flex;
     align-items: center;
 }
-
-
 
 .info-wrapper li {
     padding-left: 6px;
@@ -261,6 +257,12 @@ footer a:hover {
     border-right: 1px solid grey;
 }
 
-#flag {
+#flag, #last-item {
     border: 0px;
 }
+
+
+.footer-bottom {
+    display: flex;
+}
+
